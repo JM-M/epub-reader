@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .h1 {
+    @apply font-bold text-2xl;
+  }
+  .btn {
+    @apply rounded-full p-1 px-4 border border-black;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', cursive;
+}
+
+.custom-scrollbar {
+  @apply scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-neutral-800 scrollbar-track-transparent overflow-y-scroll;
+}
+
+.epub-container {
+  scrollbar-width: none;
+}
